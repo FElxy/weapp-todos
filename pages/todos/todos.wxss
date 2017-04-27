@@ -1,0 +1,104 @@
+page {
+  background: #20bfcb;
+}
+
+.wrap {
+  position: relative;
+  width: 540rpx;
+  margin: 150rpx auto 0;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 4rpx;
+  box-shadow: 0 0 8rpx 0 rgba(0, 0, 0, 0.2),
+                0 32rpx 2rpx -16rpx rgba(255, 255, 255, 0.4),
+                0 64rpx 2rpx -32rpx rgba(255, 255, 255, 0.4);
+}
+
+.tt {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: -100rpx;
+  font-size: 70rpx;
+  text-align: center;
+}
+
+.hd {
+  position: relative;
+  padding: 30rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+
+.bd {
+  height: 480rpx;
+}
+
+.bd .item {
+  display: flex;
+  align-items: center;
+  padding: 30rpx 0;
+  margin: 0 30rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.bd .item:last-child {
+  border-bottom: none;
+}
+.item .done {
+  color: #999;
+  text-decoration: line-through;
+}
+.item .detail {
+  word-break: break-all;
+}
+.ft {
+  border-top: 1rpx solid #f1f1f1;
+  padding: 30rpx;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+  padding: 50rpx;
+  margin-top: 50rpx;
+}
+
+.btn {
+  display: inline-block;
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  border-radius: 100%;
+  border: 1rpx solid #f1f1f1;
+}
+.btn.active {
+  background: rgba(255, 255, 255, .4);
+  border-color: transparent;
+}
+.btn::before, .btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.btn-del::before {
+  width: 50rpx;
+  height: 1rpx;
+  transform: translate(-50%, 0) rotate(-45deg);
+  background: #f1f1f1;
+}
+
+.btn-del::after {
+  width: 50rpx;
+  height: 1rpx;
+  transform: translate(-50%, 0) rotate(45deg);
+  background: #f1f1f1;
+}
+
+.btn-check::before {
+  width: 25rpx;
+  height: 50rpx;
+  border-right: 1rpx solid #f1f1f1;
+  border-bottom: 1rpx solid #f1f1f1;
+  transform: rotate(45deg) translate(-115%, -25%);
+}

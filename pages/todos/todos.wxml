@@ -1,0 +1,21 @@
+<view class="wrap">
+  <view class="hd">
+    <text class="tt">TODOS</text>
+    <input placeholder="Add Todos" value="{{newTodo}}" bindconfirm="addTodo" confirm-type="done" />
+  </view>
+  <scroll-view scroll-y="true" class="bd" >
+    <view class="item" wx:for="{{todos}}" wx:key="id">
+      <label class="checkbox" >
+        <checkbox checked="{{item.done}}" data-itemid="{{item.id}}" bindtap="checkboxChange"/>
+      </label>
+      <text class="detail {{item.done ? 'done':''}}">{{item.msg}}</text>
+    </view>
+  </scroll-view>
+  <view class="ft">
+    <label></label> mansu
+  </view>
+</view>
+<view class="btns">
+  <label class="btn btn-check {{isCheckAll ? 'active':''}}" data-check="{{isCheckAll}}" bindtap="checkAll"></label>
+  <label class="btn btn-del" bindtap="clearTodo"></label>
+</view>
