@@ -47,7 +47,7 @@ page {
   text-decoration: line-through;
 }
 .item .detail {
-  word-break: break-all;
+  word-break: normal;
 }
 .ft {
   border-top: 1rpx solid #f1f1f1;

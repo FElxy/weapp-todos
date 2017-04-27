@@ -6,7 +6,7 @@
   <scroll-view scroll-y="true" class="bd" >
     <view class="item" wx:for="{{todos}}" wx:key="id">
       <label class="checkbox" >
-        <checkbox checked="{{item.done}}" data-itemid="{{item.id}}" bindtap="checkboxChange"/>
+        <radio checked="{{item.done}}" data-itemid="{{item.id}}" bindtap="checkboxChange"/>
       </label>
       <text class="detail {{item.done ? 'done':''}}">{{item.msg}}</text>
     </view>

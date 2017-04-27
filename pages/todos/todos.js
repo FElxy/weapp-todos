@@ -39,7 +39,7 @@ Page({
       msg: val,
       done: false
     })
-    console.log(todos)
+    
     this.setData({
       todos: todos,
       newTodo: '',
